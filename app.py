@@ -8,8 +8,7 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 @app.route('/')
-def ola():
-    # return '<h1>Olá, Mundo!</h1>'
+def index():
     return render_template('index.html')
 
 @app.route('/sobre-equipe')
